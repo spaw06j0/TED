@@ -180,6 +180,8 @@ class DataBaseSampler(object):
         gt_boxes_mask = np.array([n in self.class_names for n in data_dict['gt_names']], dtype=np.bool_)
         gt_boxes = data_dict['gt_boxes'][gt_boxes_mask]
         gt_names = data_dict['gt_names'][gt_boxes_mask]
+        pts_ratio = data_dict['pts_ratio'][gt_boxes_mask]
+
         if 'gt_tracklets' in data_dict:
             data_dict['gt_tracklets']=data_dict['gt_tracklets'][gt_boxes_mask]
         points = data_dict['points']
@@ -209,7 +211,7 @@ class DataBaseSampler(object):
 
         obj_points = np.concatenate(obj_points_list, axis=0)
         sampled_gt_names = np.array([x['name'] for x in total_valid_sampled_dict])
-
+        sampled_pts_ratio = np.array([x['pts_ratio'] for x in total_valid_sampled_dict])
         if self.use_van:
             sampled_gt_names = np.array(['Car' if sampled_gt_names[i]=='Van' else sampled_gt_names[i] for i in range(len(sampled_gt_names))])
 
@@ -220,6 +222,7 @@ class DataBaseSampler(object):
         points = np.concatenate([obj_points[:, 0:points.shape[1]], points], axis=0)
         gt_names = np.concatenate([gt_names, sampled_gt_names], axis=0)
         gt_boxes = np.concatenate([gt_boxes, sampled_gt_boxes], axis=0)
+        pts_ratio = np.concatenate([pts_ratio, sampled_pts_ratio], axis=0)
 
         valid_mask = np.ones((len(gt_names),), dtype=np.bool_)
         valid_mask[:len(gt_names) - len(sampled_gt_names)] = 0
@@ -227,6 +230,8 @@ class DataBaseSampler(object):
         data_dict['valid_noise'] = valid_mask
         data_dict['gt_boxes'] = gt_boxes
         data_dict['gt_names'] = gt_names
+        data_dict['pts_ratio'] = pts_ratio
+
         data_dict['points'] = points
         if 'road_plane' in data_dict:
             data_dict.pop('road_plane')
@@ -247,14 +252,13 @@ class DataBaseSampler(object):
         gt_names = data_dict['gt_names'].astype(str)
         existed_boxes = gt_boxes
         total_valid_sampled_dict = []
-
+        
         for class_name, sample_group in self.sample_groups.items():
             if self.limit_whole_scene:
                 num_gt = np.sum(class_name == gt_names)
                 sample_group['sample_num'] = str(int(self.sample_class_num[class_name]) - num_gt)
             if int(sample_group['sample_num']) > 0:
                 sampled_dict = self.sample_with_fixed_number(class_name, sample_group)
-
                 sampled_boxes1 = np.stack([x['box3d_lidar'] for x in sampled_dict], axis=0).astype(np.float32)
 
                 if self.sampler_cfg.get('DATABASE_WITH_FAKELIDAR', False):
@@ -265,13 +269,12 @@ class DataBaseSampler(object):
 
                 iou2[range(sampled_boxes.shape[0]), range(sampled_boxes.shape[0])] = 0
                 iou1 = iou1 if iou1.shape[1] > 0 else iou2
+
                 valid_mask = ((iou1.max(axis=1) + iou2.max(axis=1)) == 0).nonzero()[0]
                 valid_sampled_dict = [sampled_dict[x] for x in valid_mask]
                 valid_sampled_boxes = sampled_boxes[valid_mask]
-
                 existed_boxes = np.concatenate((existed_boxes, valid_sampled_boxes), axis=0)
                 total_valid_sampled_dict.extend(valid_sampled_dict)
-
         sampled_gt_boxes = existed_boxes[gt_boxes.shape[0]:, :]
         if total_valid_sampled_dict.__len__() > 0:
 
@@ -541,10 +544,10 @@ class DADataBaseSampler(object):
 
 
     def add_sampled_boxes_to_scene(self, data_dict, sampled_gt_boxes, total_valid_sampled_dict):
-
         gt_boxes_mask = np.array([n in self.class_names for n in data_dict['gt_names']], dtype=np.bool_)
         gt_boxes = data_dict['gt_boxes'][gt_boxes_mask]
         gt_names = data_dict['gt_names'][gt_boxes_mask]
+        pts_ratio = data_dict['pts_ratio'][gt_boxes_mask]
         if 'gt_tracklets' in data_dict:
             data_dict['gt_tracklets'] = data_dict['gt_tracklets'][gt_boxes_mask]
         points = data_dict['points']
@@ -586,6 +589,7 @@ class DADataBaseSampler(object):
 
         obj_points = np.concatenate(obj_points_list, axis=0)
         sampled_gt_names = np.array([x['name'] for x in total_valid_sampled_dict])
+        sampled_pts_ratio = np.array([x['pts_ratio'] for x in total_valid_sampled_dict])
 
         large_sampled_gt_boxes = box_utils.enlarge_box3d(
             sampled_gt_boxes[:, 0:7], extra_width=self.sampler_cfg.REMOVE_EXTRA_WIDTH
@@ -599,6 +603,7 @@ class DADataBaseSampler(object):
 
         gt_names = np.concatenate([gt_names, sampled_gt_names], axis=0)
         gt_boxes = np.concatenate([gt_boxes, sampled_gt_boxes], axis=0)
+        pts_ratio = np.concatenate([pts_ratio, sampled_pts_ratio], axis=0)
 
         valid_mask = np.ones((len(gt_names),), dtype=np.bool_)
         if 'valid_noise' in data_dict:
@@ -610,9 +615,10 @@ class DADataBaseSampler(object):
         data_dict['gt_boxes'] = gt_boxes
         data_dict['gt_names'] = gt_names
         data_dict['points'] = points
+        data_dict['pts_ratio'] = pts_ratio
+        
         if 'road_plane' in data_dict:
             data_dict.pop('road_plane')
-
         return data_dict
 
     def __call__(self, data_dict):
@@ -624,12 +630,14 @@ class DADataBaseSampler(object):
         Returns:
 
         """
-
+        # print("DADataBaseSampler")
+        # print(data_dict['gt_boxes'].shape)
+        # print(data_dict['pts_ratio'].shape)
+        # exit()
         gt_boxes = data_dict['gt_boxes']
         gt_names = data_dict['gt_names'].astype(str)
         existed_boxes = gt_boxes
         total_valid_sampled_dict = []
-
         for class_name, sample_group in self.sample_groups.items():
             if self.limit_whole_scene:
                 num_gt = np.sum(class_name == gt_names)

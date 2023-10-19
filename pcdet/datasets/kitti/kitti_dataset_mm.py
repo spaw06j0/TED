@@ -129,7 +129,7 @@ class KittiDatasetMM(DatasetTemplate):
 
         return pts_valid_flag
 
-    def get_infos(self, num_workers=4, has_label=True, count_inside_pts=True, sample_id_list=None):
+    def get_infos(self, num_workers=4, has_label=True, count_inside_pts=True, sample_id_list=None, count_2d_pts_ratio = True):
         import concurrent.futures as futures
 
         def process_single_scene(sample_idx):
@@ -195,7 +195,48 @@ class KittiDatasetMM(DatasetTemplate):
                         flag = box_utils.in_hull(pts_fov[:, 0:3], corners_lidar[k])
                         num_points_in_gt[k] = flag.sum()
                     annotations['num_points_in_gt'] = num_points_in_gt
+                if count_2d_pts_ratio:
+                    points = self.get_lidar(sample_idx)
+                    calib = self.get_calib(sample_idx)
+                    pts_img, _ = calib.lidar_to_img(points[:, :3])
+                    corners_lidar = box_utils.boxes_to_corners_3d(gt_boxes_lidar)
+                    # print(pts_img)
+                    # left_box, right_box = box_utils.separate_boxes_half(gt_boxes_img)
+                    left_corners, right_corners = box_utils.separate_boxes_to_corner_2d_half(gt_boxes_img)
+                    # print(left_box.shape) 
+                    # print(right_box.shape)
+                    pts_ratio = np.zeros(num_gt, dtype=np.float32)
+                    left_points = -np.ones(num_gt, dtype=np.int32)
+                    right_points = -np.ones(num_gt, dtype=np.int32)
+                    for k in range(num_objects):
+                        flag = box_utils.in_hull(points[:, 0:3], corners_lidar[k])
+                    for k in range(num_objects):
+                        flag = box_utils.in_hull(points[:, 0:3], corners_lidar[k])
 
+                        flag_left = box_utils.in_hull(pts_img, left_corners[k])
+                        flag_left = flag & flag_left
+                        num_points_left = flag_left.sum()
+                        left_points[k] = num_points_left
+
+                        flag_right = box_utils.in_hull(pts_img, right_corners[k])
+                        flag_right = flag & flag_right
+                        num_points_right = flag_right.sum()
+                        right_points[k] = num_points_right
+
+                        if num_points_right == 0 and num_points_left == 0:
+                            pts_ratio[k] = 0
+                        elif num_points_right >= num_points_left:
+                            pts_ratio[k] = num_points_left / num_points_right
+                        else:
+                            pts_ratio[k] = num_points_right / num_points_left 
+
+                        if np.isinf(pts_ratio[k]) or np.isnan(pts_ratio[k]):
+                            print(pts_ratio[k])
+                            exit()
+
+                    annotations['pts_ratio'] = pts_ratio
+                    annotations['l_points'] = left_points
+                    annotations['r_points'] = right_points
             return info
 
         sample_id_list = sample_id_list if sample_id_list is not None else self.sample_id_list
@@ -246,7 +287,9 @@ class KittiDatasetMM(DatasetTemplate):
                     db_path = str(filepath.relative_to(self.root_path))  # gt_database/xxxxx.bin
                     db_info = {'name': names[i], 'path': db_path, 'image_idx': sample_idx, 'gt_idx': i,
                                'box3d_lidar': gt_boxes[i], 'num_points_in_gt': shape,
-                               'difficulty': difficulty[i], 'bbox': bbox[i], 'score': annos['score'][i]}
+                               'difficulty': difficulty[i], 'bbox': bbox[i], 'score': annos['score'][i],
+                               'pts_ratio': annos['pts_ratio'][i], 'l_points': annos['l_points'][i],
+                               'r_points': annos['r_points'][i]}
                     if names[i] in all_db_infos:
                         all_db_infos[names[i]].append(db_info)
                     else:
@@ -399,7 +442,7 @@ class KittiDatasetMM(DatasetTemplate):
             annos = common_utils.drop_info_with_name(annos, name='DontCare')
             loc, dims, rots = annos['location'], annos['dimensions'], annos['rotation_y']
             gt_names = annos['name']
-
+            pts_ratio = annos['pts_ratio']
             if (self.dataset_cfg.get('USE_VAN', None) is True) and (self.training is True):
                 gt_names = np.array(['Car' if gt_names[i]=='Van' else gt_names[i] for i in range(len(gt_names))])
 
@@ -410,17 +453,17 @@ class KittiDatasetMM(DatasetTemplate):
                 annos['num_points_in_gt'] = annos['num_points_in_gt'][nmask]
                 gt_names = gt_names[nmask]
                 gt_boxes_lidar = gt_boxes_lidar[nmask]
+                pts_ratio = pts_ratio[nmask]
 
             input_dict.update({
                 'gt_names': gt_names,
-                'gt_boxes': gt_boxes_lidar
+                'gt_boxes': gt_boxes_lidar,
+                'pts_ratio': pts_ratio,
             })
-
 
             road_plane = self.get_road_plane(sample_idx)
             if road_plane is not None:
                 input_dict['road_plane'] = road_plane
-
         data_dict = self.prepare_data(data_dict=input_dict)
         data_dict['image_shape'] = img_shape
         data_dict['calib'] = calib

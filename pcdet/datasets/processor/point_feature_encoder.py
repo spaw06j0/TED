@@ -27,7 +27,6 @@ class PointFeatureEncoder(object):
                 use_lead_xyz: whether to use xyz as point-wise features
                 ...
         """
-
         for i in range(self.rot_num):
             if i == 0:
                 rot_num_id = ''
@@ -43,7 +42,6 @@ class PointFeatureEncoder(object):
                 )
 
         data_dict['use_lead_xyz'] = use_lead_xyz
-
         return data_dict
 
     def absolute_coordinates_encoding(self, points=None):

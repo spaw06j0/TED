@@ -73,7 +73,6 @@ class X_TRANS(object):
                 boxes_lidar[:, 0:3] = common_utils.rotate_points_along_z(boxes_lidar[np.newaxis, :, 0:3], rot_factor)[0]
                 boxes_lidar[:, 6] += rot_factor
             data_dict['boxes'] = boxes_lidar
-
         return data_dict
 
     def world_flip(self, data_dict=None, config=None):

@@ -1,0 +1,669 @@
+/mnt/HDD2/chun/TED/pcdet/utils/box_np_ops.py:336: NumbaDeprecationWarning: The 'nopython' keyword argument was not supplied to the 'numba.jit' decorator. The implicit default value for this argument is currently False, but it will be changed to True in Numba 0.59.0. See https://numba.readthedocs.io/en/stable/reference/deprecation.html#deprecation-of-object-mode-fall-back-behaviour-when-using-jit for details.
+  def points_in_convex_polygon_jit(points, polygon, clockwise=True):
+/mnt/HDD2/chun/TED/pcdet/utils/box_np_ops.py:336: NumbaDeprecationWarning: The 'nopython' keyword argument was not supplied to the 'numba.jit' decorator. The implicit default value for this argument is currently False, but it will be changed to True in Numba 0.59.0. See https://numba.readthedocs.io/en/stable/reference/deprecation.html#deprecation-of-object-mode-fall-back-behaviour-when-using-jit for details.
+  def points_in_convex_polygon_jit(points, polygon, clockwise=True):
+/mnt/HDD2/chun/TED/pcdet/utils/box_np_ops.py:336: NumbaDeprecationWarning: The 'nopython' keyword argument was not supplied to the 'numba.jit' decorator. The implicit default value for this argument is currently False, but it will be changed to True in Numba 0.59.0. See https://numba.readthedocs.io/en/stable/reference/deprecation.html#deprecation-of-object-mode-fall-back-behaviour-when-using-jit for details.
+  def points_in_convex_polygon_jit(points, polygon, clockwise=True):
+/mnt/HDD2/chun/TED/pcdet/utils/box_np_ops.py:336: NumbaDeprecationWarning: The 'nopython' keyword argument was not supplied to the 'numba.jit' decorator. The implicit default value for this argument is currently False, but it will be changed to True in Numba 0.59.0. See https://numba.readthedocs.io/en/stable/reference/deprecation.html#deprecation-of-object-mode-fall-back-behaviour-when-using-jit for details.
+  def points_in_convex_polygon_jit(points, polygon, clockwise=True):
+/mnt/HDD2/chun/TED/pcdet/utils/box_np_ops.py:336: NumbaDeprecationWarning: The 'nopython' keyword argument was not supplied to the 'numba.jit' decorator. The implicit default value for this argument is currently False, but it will be changed to True in Numba 0.59.0. See https://numba.readthedocs.io/en/stable/reference/deprecation.html#deprecation-of-object-mode-fall-back-behaviour-when-using-jit for details.
+  def points_in_convex_polygon_jit(points, polygon, clockwise=True):
+/mnt/HDD2/chun/TED/pcdet/utils/box_np_ops.py:336: NumbaDeprecationWarning: The 'nopython' keyword argument was not supplied to the 'numba.jit' decorator. The implicit default value for this argument is currently False, but it will be changed to True in Numba 0.59.0. See https://numba.readthedocs.io/en/stable/reference/deprecation.html#deprecation-of-object-mode-fall-back-behaviour-when-using-jit for details.
+  def points_in_convex_polygon_jit(points, polygon, clockwise=True):
+/mnt/HDD2/chun/TED/pcdet/utils/box_np_ops.py:336: NumbaDeprecationWarning: The 'nopython' keyword argument was not supplied to the 'numba.jit' decorator. The implicit default value for this argument is currently False, but it will be changed to True in Numba 0.59.0. See https://numba.readthedocs.io/en/stable/reference/deprecation.html#deprecation-of-object-mode-fall-back-behaviour-when-using-jit for details.
+  def points_in_convex_polygon_jit(points, polygon, clockwise=True):
+/mnt/HDD2/chun/TED/pcdet/utils/box_np_ops.py:336: NumbaDeprecationWarning: The 'nopython' keyword argument was not supplied to the 'numba.jit' decorator. The implicit default value for this argument is currently False, but it will be changed to True in Numba 0.59.0. See https://numba.readthedocs.io/en/stable/reference/deprecation.html#deprecation-of-object-mode-fall-back-behaviour-when-using-jit for details.
+  def points_in_convex_polygon_jit(points, polygon, clockwise=True):
+2023-09-07 23:39:36,562   INFO  **********************Start logging**********************
+INFO:pcdet.utils.common_utils:**********************Start logging**********************
+2023-09-07 23:39:36,563   INFO  CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7
+INFO:pcdet.utils.common_utils:CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7
+2023-09-07 23:39:36,563   INFO  total_batch_size: 16
+INFO:pcdet.utils.common_utils:total_batch_size: 16
+2023-09-07 23:39:36,563   INFO  cfg_file         cfgs/models/kitti/TED-M.yaml
+INFO:pcdet.utils.common_utils:cfg_file         cfgs/models/kitti/TED-M.yaml
+2023-09-07 23:39:36,563   INFO  batch_size       2
+INFO:pcdet.utils.common_utils:batch_size       2
+2023-09-07 23:39:36,564   INFO  epochs           30
+INFO:pcdet.utils.common_utils:epochs           30
+2023-09-07 23:39:36,564   INFO  workers          0
+INFO:pcdet.utils.common_utils:workers          0
+2023-09-07 23:39:36,564   INFO  extra_tag        default
+INFO:pcdet.utils.common_utils:extra_tag        default
+2023-09-07 23:39:36,564   INFO  ckpt             None
+INFO:pcdet.utils.common_utils:ckpt             None
+2023-09-07 23:39:36,564   INFO  pretrained_model None
+INFO:pcdet.utils.common_utils:pretrained_model None
+2023-09-07 23:39:36,564   INFO  launcher         pytorch
+INFO:pcdet.utils.common_utils:launcher         pytorch
+2023-09-07 23:39:36,564   INFO  tcp_port         23271
+INFO:pcdet.utils.common_utils:tcp_port         23271
+2023-09-07 23:39:36,564   INFO  sync_bn          False
+INFO:pcdet.utils.common_utils:sync_bn          False
+2023-09-07 23:39:36,565   INFO  fix_random_seed  True
+INFO:pcdet.utils.common_utils:fix_random_seed  True
+2023-09-07 23:39:36,565   INFO  ckpt_save_interval 1
+INFO:pcdet.utils.common_utils:ckpt_save_interval 1
+2023-09-07 23:39:36,565   INFO  local_rank       0
+INFO:pcdet.utils.common_utils:local_rank       0
+2023-09-07 23:39:36,565   INFO  max_ckpt_save_num 10
+INFO:pcdet.utils.common_utils:max_ckpt_save_num 10
+2023-09-07 23:39:36,565   INFO  merge_all_iters_to_one_epoch False
+INFO:pcdet.utils.common_utils:merge_all_iters_to_one_epoch False
+2023-09-07 23:39:36,565   INFO  set_cfgs         None
+INFO:pcdet.utils.common_utils:set_cfgs         None
+2023-09-07 23:39:36,565   INFO  max_waiting_mins 0
+INFO:pcdet.utils.common_utils:max_waiting_mins 0
+2023-09-07 23:39:36,565   INFO  start_epoch      0
+INFO:pcdet.utils.common_utils:start_epoch      0
+2023-09-07 23:39:36,566   INFO  save_to_file     False
+INFO:pcdet.utils.common_utils:save_to_file     False
+2023-09-07 23:39:36,566   INFO  cfg.ROOT_DIR: /mnt/HDD2/chun/TED
+INFO:pcdet.utils.common_utils:cfg.ROOT_DIR: /mnt/HDD2/chun/TED
+2023-09-07 23:39:36,566   INFO  cfg.LOCAL_RANK: 0
+INFO:pcdet.utils.common_utils:cfg.LOCAL_RANK: 0
+2023-09-07 23:39:36,566   INFO  cfg.CLASS_NAMES: ['Car']
+INFO:pcdet.utils.common_utils:cfg.CLASS_NAMES: ['Car']
+2023-09-07 23:39:36,566   INFO  
+cfg.DATA_CONFIG = edict()
+INFO:pcdet.utils.common_utils:
+cfg.DATA_CONFIG = edict()
+2023-09-07 23:39:36,566   INFO  cfg.DATA_CONFIG.DATA_PATH: ../data/kitti
+INFO:pcdet.utils.common_utils:cfg.DATA_CONFIG.DATA_PATH: ../data/kitti
+2023-09-07 23:39:36,566   INFO  cfg.DATA_CONFIG.DATASET: KittiDatasetMM
+INFO:pcdet.utils.common_utils:cfg.DATA_CONFIG.DATASET: KittiDatasetMM
+2023-09-07 23:39:36,566   INFO  cfg.DATA_CONFIG.MM_PATH: velodyne_depth
+INFO:pcdet.utils.common_utils:cfg.DATA_CONFIG.MM_PATH: velodyne_depth
+2023-09-07 23:39:36,567   INFO  cfg.DATA_CONFIG.POINT_CLOUD_RANGE: [0, -40, -3, 70.4, 40, 1]
+Traceback (most recent call last):
+INFO:pcdet.utils.common_utils:cfg.DATA_CONFIG.POINT_CLOUD_RANGE: [0, -40, -3, 70.4, 40, 1]
+  File "train.py", line 201, in <module>
+2023-09-07 23:39:36,567   INFO  
+cfg.DATA_CONFIG.DATA_SPLIT = edict()
+INFO:pcdet.utils.common_utils:
+cfg.DATA_CONFIG.DATA_SPLIT = edict()
+2023-09-07 23:39:36,567   INFO  cfg.DATA_CONFIG.DATA_SPLIT.train: train
+INFO:pcdet.utils.common_utils:cfg.DATA_CONFIG.DATA_SPLIT.train: train
+    main()
+2023-09-07 23:39:36,567   INFO  cfg.DATA_CONFIG.DATA_SPLIT.test: val
+  File "train.py", line 103, in main
+INFO:pcdet.utils.common_utils:cfg.DATA_CONFIG.DATA_SPLIT.test: val
+2023-09-07 23:39:36,567   INFO  
+cfg.DATA_CONFIG.INFO_PATH = edict()
+    train_set, train_loader, train_sampler = build_dataloader(
+  File "/mnt/HDD2/chun/TED/pcdet/datasets/__init__.py", line 52, in build_dataloader
+INFO:pcdet.utils.common_utils:
+cfg.DATA_CONFIG.INFO_PATH = edict()
+    2023-09-07 23:39:36,567   INFO  cfg.DATA_CONFIG.INFO_PATH.train: ['kitti_infos_train.pkl']
+dataset = __all__[dataset_cfg.DATASET](
+  File "/mnt/HDD2/chun/TED/pcdet/datasets/kitti/kitti_dataset_mm.py", line 23, in __init__
+INFO:pcdet.utils.common_utils:cfg.DATA_CONFIG.INFO_PATH.train: ['kitti_infos_train.pkl']
+    2023-09-07 23:39:36,567   INFO  cfg.DATA_CONFIG.INFO_PATH.test: ['kitti_infos_val.pkl']
+super().__init__(
+  File "/mnt/HDD2/chun/TED/pcdet/datasets/dataset.py", line 41, in __init__
+INFO:pcdet.utils.common_utils:cfg.DATA_CONFIG.INFO_PATH.test: ['kitti_infos_val.pkl']
+2023-09-07 23:39:36,567   INFO  cfg.DATA_CONFIG.FOV_POINTS_ONLY: True
+    self.data_augmentor = DataAugmentor(
+  File "/mnt/HDD2/chun/TED/pcdet/datasets/augmentor/data_augmentor.py", line 23, in __init__
+INFO:pcdet.utils.common_utils:cfg.DATA_CONFIG.FOV_POINTS_ONLY: True
+2023-09-07 23:39:36,568   INFO  
+cfg.DATA_CONFIG.X_TRANS = edict()
+    cur_augmentor = getattr(self, cur_cfg.NAME)(config=cur_cfg)
+  File "/mnt/HDD2/chun/TED/pcdet/datasets/augmentor/data_augmentor.py", line 27, in gt_sampling
+INFO:pcdet.utils.common_utils:
+cfg.DATA_CONFIG.X_TRANS = edict()
+    db_sampler = database_sampler.DataBaseSampler(
+  File "/mnt/HDD2/chun/TED/pcdet/datasets/augmentor/database_sampler.py", line 30, in __init__
+2023-09-07 23:39:36,568   INFO  cfg.DATA_CONFIG.X_TRANS.AUG_CONFIG_LIST: [{'NAME': 'world_rotation', 'WORLD_ROT_ANGLE': [0.39269908, 0, 0.39269908, -0.39269908, -0.39269908, 0]}, {'NAME': 'world_flip', 'ALONG_AXIS_LIST': [0, 1, 1, 0, 1, 0]}, {'NAME': 'world_scaling', 'WORLD_SCALE_RANGE': [0.98, 1.02, 1.0, 0.98, 1.02, 1.0]}]
+    INFO:pcdet.utils.common_utils:cfg.DATA_CONFIG.X_TRANS.AUG_CONFIG_LIST: [{'NAME': 'world_rotation', 'WORLD_ROT_ANGLE': [0.39269908, 0, 0.39269908, -0.39269908, -0.39269908, 0]}, {'NAME': 'world_flip', 'ALONG_AXIS_LIST': [0, 1, 1, 0, 1, 0]}, {'NAME': 'world_scaling', 'WORLD_SCALE_RANGE': [0.98, 1.02, 1.0, 0.98, 1.02, 1.0]}]
+with open(str(db_info_path), 'rb') as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/mnt/HDD2/chun/OpenPCDet/data/kitti/kitti_dbinfos_train_mm.pkl'2023-09-07 23:39:36,568   INFO  
+cfg.DATA_CONFIG.DATA_AUGMENTOR = edict()
+
+INFO:pcdet.utils.common_utils:
+cfg.DATA_CONFIG.DATA_AUGMENTOR = edict()
+2023-09-07 23:39:36,568   INFO  cfg.DATA_CONFIG.DATA_AUGMENTOR.DISABLE_AUG_LIST: ['placeholder']
+INFO:pcdet.utils.common_utils:cfg.DATA_CONFIG.DATA_AUGMENTOR.DISABLE_AUG_LIST: ['placeholder']
+2023-09-07 23:39:36,568   INFO  cfg.DATA_CONFIG.DATA_AUGMENTOR.AUG_CONFIG_LIST: [{'NAME': 'gt_sampling', 'USE_ROAD_PLANE': True, 'DB_INFO_PATH': ['kitti_dbinfos_train_mm.pkl'], 'PREPARE': {'filter_by_min_points': ['Car:5', 'Pedestrian:5', 'Cyclist:5'], 'filter_by_difficulty': [-1]}, 'SAMPLE_GROUPS': ['Car:10', 'Pedestrian:10', 'Cyclist:10'], 'NUM_POINT_FEATURES': 8, 'DATABASE_WITH_FAKELIDAR': False, 'REMOVE_EXTRA_WIDTH': [0.0, 0.0, -0.2], 'LIMIT_WHOLE_SCENE': False}, {'NAME': 'da_sampling', 'USE_ROAD_PLANE': True, 'DB_INFO_PATH': ['kitti_dbinfos_train_mm.pkl'], 'PREPARE': {'filter_by_min_points': ['Car:5'], 'filter_by_difficulty': [-1]}, 'SAMPLE_GROUPS': ['Car:10'], 'MIN_SAMPLING_DIS': 0, 'MAX_SAMPLING_DIS': 20, 'OCCLUSION_NOISE': 0.2, 'OCCLUSION_OFFSET': 2.0, 'SAMPLING_METHOD': 'LiDAR-aware', 'VERT_RES': 0.006, 'HOR_RES': 0.003, 'NUM_POINT_FEATURES': 8, 'DATABASE_WITH_FAKELIDAR': False, 'REMOVE_EXTRA_WIDTH': [0.0, 0.0, -0.2], 'LIMIT_WHOLE_SCENE': False}, {'NAME': 'random_local_noise', 'LOCAL_ROT_RANGE': [-0.78539816, 0.78539816], 'TRANSLATION_STD': [1.0, 1.0, 0.5], 'GLOBAL_ROT_RANGE': [0.0, 0.0], 'EXTRA_WIDTH': [0.2, 0.2, 0.0]}, {'NAME': 'random_world_rotation', 'WORLD_ROT_ANGLE': [-0.39269908, 0.39269908]}, {'NAME': 'random_world_scaling', 'WORLD_SCALE_RANGE': [0.95, 1.05]}, {'NAME': 'random_local_pyramid_aug', 'DROP_PROB': 0.25, 'SPARSIFY_PROB': 0.05, 'SPARSIFY_MAX_NUM': 50, 'SWAP_PROB': 0.1, 'SWAP_MAX_NUM': 50}]
+INFO:pcdet.utils.common_utils:cfg.DATA_CONFIG.DATA_AUGMENTOR.AUG_CONFIG_LIST: [{'NAME': 'gt_sampling', 'USE_ROAD_PLANE': True, 'DB_INFO_PATH': ['kitti_dbinfos_train_mm.pkl'], 'PREPARE': {'filter_by_min_points': ['Car:5', 'Pedestrian:5', 'Cyclist:5'], 'filter_by_difficulty': [-1]}, 'SAMPLE_GROUPS': ['Car:10', 'Pedestrian:10', 'Cyclist:10'], 'NUM_POINT_FEATURES': 8, 'DATABASE_WITH_FAKELIDAR': False, 'REMOVE_EXTRA_WIDTH': [0.0, 0.0, -0.2], 'LIMIT_WHOLE_SCENE': False}, {'NAME': 'da_sampling', 'USE_ROAD_PLANE': True, 'DB_INFO_PATH': ['kitti_dbinfos_train_mm.pkl'], 'PREPARE': {'filter_by_min_points': ['Car:5'], 'filter_by_difficulty': [-1]}, 'SAMPLE_GROUPS': ['Car:10'], 'MIN_SAMPLING_DIS': 0, 'MAX_SAMPLING_DIS': 20, 'OCCLUSION_NOISE': 0.2, 'OCCLUSION_OFFSET': 2.0, 'SAMPLING_METHOD': 'LiDAR-aware', 'VERT_RES': 0.006, 'HOR_RES': 0.003, 'NUM_POINT_FEATURES': 8, 'DATABASE_WITH_FAKELIDAR': False, 'REMOVE_EXTRA_WIDTH': [0.0, 0.0, -0.2], 'LIMIT_WHOLE_SCENE': False}, {'NAME': 'random_local_noise', 'LOCAL_ROT_RANGE': [-0.78539816, 0.78539816], 'TRANSLATION_STD': [1.0, 1.0, 0.5], 'GLOBAL_ROT_RANGE': [0.0, 0.0], 'EXTRA_WIDTH': [0.2, 0.2, 0.0]}, {'NAME': 'random_world_rotation', 'WORLD_ROT_ANGLE': [-0.39269908, 0.39269908]}, {'NAME': 'random_world_scaling', 'WORLD_SCALE_RANGE': [0.95, 1.05]}, {'NAME': 'random_local_pyramid_aug', 'DROP_PROB': 0.25, 'SPARSIFY_PROB': 0.05, 'SPARSIFY_MAX_NUM': 50, 'SWAP_PROB': 0.1, 'SWAP_MAX_NUM': 50}]
+2023-09-07 23:39:36,568   INFO  
+cfg.DATA_CONFIG.POINT_FEATURE_ENCODING = edict()
+INFO:pcdet.utils.common_utils:
+cfg.DATA_CONFIG.POINT_FEATURE_ENCODING = edict()
+2023-09-07 23:39:36,569   INFO  cfg.DATA_CONFIG.POINT_FEATURE_ENCODING.encoding_type: absolute_coordinates_encoding_mm
+INFO:pcdet.utils.common_utils:cfg.DATA_CONFIG.POINT_FEATURE_ENCODING.encoding_type: absolute_coordinates_encoding_mm
+2023-09-07 23:39:36,569   INFO  cfg.DATA_CONFIG.POINT_FEATURE_ENCODING.used_feature_list: ['x', 'y', 'z', 'intensity']
+INFO:pcdet.utils.common_utils:cfg.DATA_CONFIG.POINT_FEATURE_ENCODING.used_feature_list: ['x', 'y', 'z', 'intensity']
+2023-09-07 23:39:36,569   INFO  cfg.DATA_CONFIG.POINT_FEATURE_ENCODING.src_feature_list: ['x', 'y', 'z', 'intensity']
+INFO:pcdet.utils.common_utils:cfg.DATA_CONFIG.POINT_FEATURE_ENCODING.src_feature_list: ['x', 'y', 'z', 'intensity']
+Traceback (most recent call last):
+2023-09-07 23:39:36,569   INFO  cfg.DATA_CONFIG.POINT_FEATURE_ENCODING.num_features: 8
+  File "train.py", line 201, in <module>
+INFO:pcdet.utils.common_utils:cfg.DATA_CONFIG.POINT_FEATURE_ENCODING.num_features: 8
+2023-09-07 23:39:36,569   INFO  cfg.DATA_CONFIG.DATA_PROCESSOR: [{'NAME': 'mask_points_and_boxes_outside_range', 'REMOVE_OUTSIDE_BOXES': True}, {'NAME': 'shuffle_points', 'SHUFFLE_ENABLED': {'train': True, 'test': True}}, {'NAME': 'transform_points_to_voxels', 'VOXEL_SIZE': [0.05, 0.05, 0.05], 'MAX_POINTS_PER_VOXEL': 5, 'MAX_NUMBER_OF_VOXELS': {'train': 16000, 'test': 40000}}]
+INFO:pcdet.utils.common_utils:cfg.DATA_CONFIG.DATA_PROCESSOR: [{'NAME': 'mask_points_and_boxes_outside_range', 'REMOVE_OUTSIDE_BOXES': True}, {'NAME': 'shuffle_points', 'SHUFFLE_ENABLED': {'train': True, 'test': True}}, {'NAME': 'transform_points_to_voxels', 'VOXEL_SIZE': [0.05, 0.05, 0.05], 'MAX_POINTS_PER_VOXEL': 5, 'MAX_NUMBER_OF_VOXELS': {'train': 16000, 'test': 40000}}]
+2023-09-07 23:39:36,569   INFO  cfg.DATA_CONFIG._BASE_CONFIG_: cfgs/dataset_configs/kitti_dataset.yaml
+INFO:pcdet.utils.common_utils:cfg.DATA_CONFIG._BASE_CONFIG_: cfgs/dataset_configs/kitti_dataset.yaml
+2023-09-07 23:39:36,569   INFO  cfg.DATA_CONFIG.ROT_NUM: 3
+    INFO:pcdet.utils.common_utils:cfg.DATA_CONFIG.ROT_NUM: 3
+main()
+  File "train.py", line 103, in main
+2023-09-07 23:39:36,569   INFO  cfg.DATA_CONFIG.USE_VAN: True
+INFO:pcdet.utils.common_utils:cfg.DATA_CONFIG.USE_VAN: True
+2023-09-07 23:39:36,570   INFO  
+cfg.MODEL = edict()
+    INFO:pcdet.utils.common_utils:
+cfg.MODEL = edict()
+train_set, train_loader, train_sampler = build_dataloader(
+  File "/mnt/HDD2/chun/TED/pcdet/datasets/__init__.py", line 52, in build_dataloader
+2023-09-07 23:39:36,570   INFO  cfg.MODEL.NAME: VoxelRCNN
+INFO:pcdet.utils.common_utils:cfg.MODEL.NAME: VoxelRCNN
+2023-09-07 23:39:36,570   INFO  
+cfg.MODEL.VFE = edict()
+    dataset = __all__[dataset_cfg.DATASET](
+INFO:pcdet.utils.common_utils:
+cfg.MODEL.VFE = edict()
+  File "/mnt/HDD2/chun/TED/pcdet/datasets/kitti/kitti_dataset_mm.py", line 23, in __init__
+2023-09-07 23:39:36,570   INFO  cfg.MODEL.VFE.NAME: MeanVFE
+Traceback (most recent call last):
+INFO:pcdet.utils.common_utils:cfg.MODEL.VFE.NAME: MeanVFE
+      File "train.py", line 201, in <module>
+super().__init__(
+2023-09-07 23:39:36,570   INFO  cfg.MODEL.VFE.MODEL: max
+  File "/mnt/HDD2/chun/TED/pcdet/datasets/dataset.py", line 41, in __init__
+INFO:pcdet.utils.common_utils:cfg.MODEL.VFE.MODEL: max
+2023-09-07 23:39:36,570   INFO  
+cfg.MODEL.BACKBONE_3D = edict()
+Traceback (most recent call last):
+      File "train.py", line 201, in <module>
+INFO:pcdet.utils.common_utils:
+cfg.MODEL.BACKBONE_3D = edict()
+self.data_augmentor = DataAugmentor(
+  File "/mnt/HDD2/chun/TED/pcdet/datasets/augmentor/data_augmentor.py", line 23, in __init__
+2023-09-07 23:39:36,570   INFO  cfg.MODEL.BACKBONE_3D.NAME: TeMMVoxelBackBone8x
+INFO:pcdet.utils.common_utils:cfg.MODEL.BACKBONE_3D.NAME: TeMMVoxelBackBone8x
+    main()
+      File "train.py", line 103, in main
+cur_augmentor = getattr(self, cur_cfg.NAME)(config=cur_cfg)2023-09-07 23:39:36,570   INFO  cfg.MODEL.BACKBONE_3D.NUM_FILTERS: [16, 32, 64, 64]
+
+  File "/mnt/HDD2/chun/TED/pcdet/datasets/augmentor/data_augmentor.py", line 27, in gt_sampling
+INFO:pcdet.utils.common_utils:cfg.MODEL.BACKBONE_3D.NUM_FILTERS: [16, 32, 64, 64]
+    db_sampler = database_sampler.DataBaseSampler(2023-09-07 23:39:36,571   INFO  cfg.MODEL.BACKBONE_3D.RETURN_NUM_FEATURES_AS_DICT: True
+
+  File "/mnt/HDD2/chun/TED/pcdet/datasets/augmentor/database_sampler.py", line 30, in __init__
+    INFO:pcdet.utils.common_utils:cfg.MODEL.BACKBONE_3D.RETURN_NUM_FEATURES_AS_DICT: True
+train_set, train_loader, train_sampler = build_dataloader(
+      File "/mnt/HDD2/chun/TED/pcdet/datasets/__init__.py", line 52, in build_dataloader
+with open(str(db_info_path), 'rb') as f:2023-09-07 23:39:36,571   INFO  cfg.MODEL.BACKBONE_3D.OUT_FEATURES: 64
+
+    FileNotFoundErrormain(): 
+INFO:pcdet.utils.common_utils:cfg.MODEL.BACKBONE_3D.OUT_FEATURES: 64
+[Errno 2] No such file or directory: '/mnt/HDD2/chun/OpenPCDet/data/kitti/kitti_dbinfos_train_mm.pkl'  File "train.py", line 103, in main
+
+    2023-09-07 23:39:36,571   INFO  cfg.MODEL.BACKBONE_3D.MM: True
+dataset = __all__[dataset_cfg.DATASET](
+  File "/mnt/HDD2/chun/TED/pcdet/datasets/kitti/kitti_dataset_mm.py", line 23, in __init__
+INFO:pcdet.utils.common_utils:cfg.MODEL.BACKBONE_3D.MM: True
+2023-09-07 23:39:36,571   INFO  
+cfg.MODEL.MAP_TO_BEV = edict()
+    train_set, train_loader, train_sampler = build_dataloader(
+    INFO:pcdet.utils.common_utils:
+cfg.MODEL.MAP_TO_BEV = edict()
+  File "/mnt/HDD2/chun/TED/pcdet/datasets/__init__.py", line 52, in build_dataloader
+super().__init__(
+  File "/mnt/HDD2/chun/TED/pcdet/datasets/dataset.py", line 41, in __init__
+2023-09-07 23:39:36,571   INFO  cfg.MODEL.MAP_TO_BEV.NAME: BEVPool
+INFO:pcdet.utils.common_utils:cfg.MODEL.MAP_TO_BEV.NAME: BEVPool
+Traceback (most recent call last):
+      File "train.py", line 201, in <module>
+dataset = __all__[dataset_cfg.DATASET](2023-09-07 23:39:36,571   INFO  cfg.MODEL.MAP_TO_BEV.NUM_BEV_FEATURES: 256
+    
+self.data_augmentor = DataAugmentor(  File "/mnt/HDD2/chun/TED/pcdet/datasets/kitti/kitti_dataset_mm.py", line 23, in __init__
+
+INFO:pcdet.utils.common_utils:cfg.MODEL.MAP_TO_BEV.NUM_BEV_FEATURES: 256
+  File "/mnt/HDD2/chun/TED/pcdet/datasets/augmentor/data_augmentor.py", line 23, in __init__
+Traceback (most recent call last):
+2023-09-07 23:39:36,571   INFO  cfg.MODEL.MAP_TO_BEV.ALIGN_METHOD: max
+  File "train.py", line 201, in <module>
+    INFO:pcdet.utils.common_utils:cfg.MODEL.MAP_TO_BEV.ALIGN_METHOD: max
+super().__init__(    
+cur_augmentor = getattr(self, cur_cfg.NAME)(config=cur_cfg)  File "/mnt/HDD2/chun/TED/pcdet/datasets/dataset.py", line 41, in __init__
+
+2023-09-07 23:39:36,572   INFO  
+cfg.MODEL.BACKBONE_2D = edict()
+  File "/mnt/HDD2/chun/TED/pcdet/datasets/augmentor/data_augmentor.py", line 27, in gt_sampling
+    main()
+INFO:pcdet.utils.common_utils:
+cfg.MODEL.BACKBONE_2D = edict()
+  File "train.py", line 103, in main
+    self.data_augmentor = DataAugmentor(2023-09-07 23:39:36,572   INFO  cfg.MODEL.BACKBONE_2D.NAME: BaseBEVBackbone
+    
+    db_sampler = database_sampler.DataBaseSampler(  File "/mnt/HDD2/chun/TED/pcdet/datasets/augmentor/data_augmentor.py", line 23, in __init__
+main()    INFO:pcdet.utils.common_utils:cfg.MODEL.BACKBONE_2D.NAME: BaseBEVBackbone
+
+
+train_set, train_loader, train_sampler = build_dataloader(  File "/mnt/HDD2/chun/TED/pcdet/datasets/augmentor/database_sampler.py", line 30, in __init__
+  File "train.py", line 103, in main
+
+2023-09-07 23:39:36,572   INFO  cfg.MODEL.BACKBONE_2D.LAYER_NUMS: [4, 4]
+  File "/mnt/HDD2/chun/TED/pcdet/datasets/__init__.py", line 52, in build_dataloader
+    cur_augmentor = getattr(self, cur_cfg.NAME)(config=cur_cfg)
+  File "/mnt/HDD2/chun/TED/pcdet/datasets/augmentor/data_augmentor.py", line 27, in gt_sampling
+    with open(str(db_info_path), 'rb') as f:        
+dataset = __all__[dataset_cfg.DATASET](train_set, train_loader, train_sampler = build_dataloader(
+FileNotFoundError
+    Traceback (most recent call last):
+  File "/mnt/HDD2/chun/TED/pcdet/datasets/kitti/kitti_dataset_mm.py", line 23, in __init__
+:   File "/mnt/HDD2/chun/TED/pcdet/datasets/__init__.py", line 52, in build_dataloader
+db_sampler = database_sampler.DataBaseSampler(  File "train.py", line 201, in <module>
+[Errno 2] No such file or directory: '/mnt/HDD2/chun/OpenPCDet/data/kitti/kitti_dbinfos_train_mm.pkl'
+
+  File "/mnt/HDD2/chun/TED/pcdet/datasets/augmentor/database_sampler.py", line 30, in __init__
+    super().__init__(
+      File "/mnt/HDD2/chun/TED/pcdet/datasets/dataset.py", line 41, in __init__
+dataset = __all__[dataset_cfg.DATASET](
+  File "/mnt/HDD2/chun/TED/pcdet/datasets/kitti/kitti_dataset_mm.py", line 23, in __init__
+    with open(str(db_info_path), 'rb') as f:    
+self.data_augmentor = DataAugmentor(    
+    super().__init__(  File "/mnt/HDD2/chun/TED/pcdet/datasets/augmentor/data_augmentor.py", line 23, in __init__
+FileNotFoundErrormain()
+: 
+  File "/mnt/HDD2/chun/TED/pcdet/datasets/dataset.py", line 41, in __init__
+  File "train.py", line 103, in main
+[Errno 2] No such file or directory: '/mnt/HDD2/chun/OpenPCDet/data/kitti/kitti_dbinfos_train_mm.pkl'
+    cur_augmentor = getattr(self, cur_cfg.NAME)(config=cur_cfg)
+  File "/mnt/HDD2/chun/TED/pcdet/datasets/augmentor/data_augmentor.py", line 27, in gt_sampling
+    self.data_augmentor = DataAugmentor(
+  File "/mnt/HDD2/chun/TED/pcdet/datasets/augmentor/data_augmentor.py", line 23, in __init__
+    train_set, train_loader, train_sampler = build_dataloader(    
+db_sampler = database_sampler.DataBaseSampler(  File "/mnt/HDD2/chun/TED/pcdet/datasets/__init__.py", line 52, in build_dataloader
+
+      File "/mnt/HDD2/chun/TED/pcdet/datasets/augmentor/database_sampler.py", line 30, in __init__
+cur_augmentor = getattr(self, cur_cfg.NAME)(config=cur_cfg)
+  File "/mnt/HDD2/chun/TED/pcdet/datasets/augmentor/data_augmentor.py", line 27, in gt_sampling
+    dataset = __all__[dataset_cfg.DATASET](
+      File "/mnt/HDD2/chun/TED/pcdet/datasets/kitti/kitti_dataset_mm.py", line 23, in __init__
+    with open(str(db_info_path), 'rb') as f:db_sampler = database_sampler.DataBaseSampler(
+
+  File "/mnt/HDD2/chun/TED/pcdet/datasets/augmentor/database_sampler.py", line 30, in __init__
+FileNotFoundError    : super().__init__([Errno 2] No such file or directory: '/mnt/HDD2/chun/OpenPCDet/data/kitti/kitti_dbinfos_train_mm.pkl'
+    
+  File "/mnt/HDD2/chun/TED/pcdet/datasets/dataset.py", line 41, in __init__
+with open(str(db_info_path), 'rb') as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/mnt/HDD2/chun/OpenPCDet/data/kitti/kitti_dbinfos_train_mm.pkl'
+    self.data_augmentor = DataAugmentor(
+  File "/mnt/HDD2/chun/TED/pcdet/datasets/augmentor/data_augmentor.py", line 23, in __init__
+    cur_augmentor = getattr(self, cur_cfg.NAME)(config=cur_cfg)
+  File "/mnt/HDD2/chun/TED/pcdet/datasets/augmentor/data_augmentor.py", line 27, in gt_sampling
+    db_sampler = database_sampler.DataBaseSampler(
+  File "/mnt/HDD2/chun/TED/pcdet/datasets/augmentor/database_sampler.py", line 30, in __init__
+    with open(str(db_info_path), 'rb') as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/mnt/HDD2/chun/OpenPCDet/data/kitti/kitti_dbinfos_train_mm.pkl'
+INFO:pcdet.utils.common_utils:cfg.MODEL.BACKBONE_2D.LAYER_NUMS: [4, 4]
+2023-09-07 23:39:36,575   INFO  cfg.MODEL.BACKBONE_2D.LAYER_STRIDES: [1, 2]
+INFO:pcdet.utils.common_utils:cfg.MODEL.BACKBONE_2D.LAYER_STRIDES: [1, 2]
+2023-09-07 23:39:36,576   INFO  cfg.MODEL.BACKBONE_2D.NUM_FILTERS: [64, 128]
+INFO:pcdet.utils.common_utils:cfg.MODEL.BACKBONE_2D.NUM_FILTERS: [64, 128]
+2023-09-07 23:39:36,576   INFO  cfg.MODEL.BACKBONE_2D.UPSAMPLE_STRIDES: [1, 2]
+INFO:pcdet.utils.common_utils:cfg.MODEL.BACKBONE_2D.UPSAMPLE_STRIDES: [1, 2]
+2023-09-07 23:39:36,576   INFO  cfg.MODEL.BACKBONE_2D.NUM_UPSAMPLE_FILTERS: [128, 128]
+INFO:pcdet.utils.common_utils:cfg.MODEL.BACKBONE_2D.NUM_UPSAMPLE_FILTERS: [128, 128]
+2023-09-07 23:39:36,576   INFO  
+cfg.MODEL.DENSE_HEAD = edict()
+INFO:pcdet.utils.common_utils:
+cfg.MODEL.DENSE_HEAD = edict()
+2023-09-07 23:39:36,576   INFO  cfg.MODEL.DENSE_HEAD.NAME: AnchorHeadSingle
+INFO:pcdet.utils.common_utils:cfg.MODEL.DENSE_HEAD.NAME: AnchorHeadSingle
+2023-09-07 23:39:36,576   INFO  cfg.MODEL.DENSE_HEAD.CLASS_AGNOSTIC: False
+INFO:pcdet.utils.common_utils:cfg.MODEL.DENSE_HEAD.CLASS_AGNOSTIC: False
+2023-09-07 23:39:36,576   INFO  cfg.MODEL.DENSE_HEAD.USE_DIRECTION_CLASSIFIER: True
+INFO:pcdet.utils.common_utils:cfg.MODEL.DENSE_HEAD.USE_DIRECTION_CLASSIFIER: True
+2023-09-07 23:39:36,576   INFO  cfg.MODEL.DENSE_HEAD.DIR_OFFSET: 0.78539
+INFO:pcdet.utils.common_utils:cfg.MODEL.DENSE_HEAD.DIR_OFFSET: 0.78539
+2023-09-07 23:39:36,577   INFO  cfg.MODEL.DENSE_HEAD.DIR_LIMIT_OFFSET: 0.0
+INFO:pcdet.utils.common_utils:cfg.MODEL.DENSE_HEAD.DIR_LIMIT_OFFSET: 0.0
+2023-09-07 23:39:36,577   INFO  cfg.MODEL.DENSE_HEAD.NUM_DIR_BINS: 2
+INFO:pcdet.utils.common_utils:cfg.MODEL.DENSE_HEAD.NUM_DIR_BINS: 2
+2023-09-07 23:39:36,577   INFO  cfg.MODEL.DENSE_HEAD.ANCHOR_GENERATOR_CONFIG: [{'class_name': 'Car', 'anchor_sizes': [[3.9, 1.6, 1.56]], 'anchor_rotations': [0, 1.57], 'anchor_bottom_heights': [-1.78], 'align_center': False, 'feature_map_stride': 8, 'matched_threshold': 0.6, 'unmatched_threshold': 0.45}]
+INFO:pcdet.utils.common_utils:cfg.MODEL.DENSE_HEAD.ANCHOR_GENERATOR_CONFIG: [{'class_name': 'Car', 'anchor_sizes': [[3.9, 1.6, 1.56]], 'anchor_rotations': [0, 1.57], 'anchor_bottom_heights': [-1.78], 'align_center': False, 'feature_map_stride': 8, 'matched_threshold': 0.6, 'unmatched_threshold': 0.45}]
+2023-09-07 23:39:36,577   INFO  
+cfg.MODEL.DENSE_HEAD.TARGET_ASSIGNER_CONFIG = edict()
+INFO:pcdet.utils.common_utils:
+cfg.MODEL.DENSE_HEAD.TARGET_ASSIGNER_CONFIG = edict()
+2023-09-07 23:39:36,577   INFO  cfg.MODEL.DENSE_HEAD.TARGET_ASSIGNER_CONFIG.NAME: AxisAlignedTargetAssigner
+INFO:pcdet.utils.common_utils:cfg.MODEL.DENSE_HEAD.TARGET_ASSIGNER_CONFIG.NAME: AxisAlignedTargetAssigner
+2023-09-07 23:39:36,577   INFO  cfg.MODEL.DENSE_HEAD.TARGET_ASSIGNER_CONFIG.POS_FRACTION: -1.0
+INFO:pcdet.utils.common_utils:cfg.MODEL.DENSE_HEAD.TARGET_ASSIGNER_CONFIG.POS_FRACTION: -1.0
+2023-09-07 23:39:36,577   INFO  cfg.MODEL.DENSE_HEAD.TARGET_ASSIGNER_CONFIG.SAMPLE_SIZE: 512
+INFO:pcdet.utils.common_utils:cfg.MODEL.DENSE_HEAD.TARGET_ASSIGNER_CONFIG.SAMPLE_SIZE: 512
+2023-09-07 23:39:36,577   INFO  cfg.MODEL.DENSE_HEAD.TARGET_ASSIGNER_CONFIG.NORM_BY_NUM_EXAMPLES: False
+INFO:pcdet.utils.common_utils:cfg.MODEL.DENSE_HEAD.TARGET_ASSIGNER_CONFIG.NORM_BY_NUM_EXAMPLES: False
+2023-09-07 23:39:36,578   INFO  cfg.MODEL.DENSE_HEAD.TARGET_ASSIGNER_CONFIG.MATCH_HEIGHT: False
+INFO:pcdet.utils.common_utils:cfg.MODEL.DENSE_HEAD.TARGET_ASSIGNER_CONFIG.MATCH_HEIGHT: False
+2023-09-07 23:39:36,578   INFO  cfg.MODEL.DENSE_HEAD.TARGET_ASSIGNER_CONFIG.BOX_CODER: ResidualCoder
+INFO:pcdet.utils.common_utils:cfg.MODEL.DENSE_HEAD.TARGET_ASSIGNER_CONFIG.BOX_CODER: ResidualCoder
+2023-09-07 23:39:36,578   INFO  
+cfg.MODEL.DENSE_HEAD.LOSS_CONFIG = edict()
+INFO:pcdet.utils.common_utils:
+cfg.MODEL.DENSE_HEAD.LOSS_CONFIG = edict()
+2023-09-07 23:39:36,578   INFO  
+cfg.MODEL.DENSE_HEAD.LOSS_CONFIG.LOSS_WEIGHTS = edict()
+INFO:pcdet.utils.common_utils:
+cfg.MODEL.DENSE_HEAD.LOSS_CONFIG.LOSS_WEIGHTS = edict()
+2023-09-07 23:39:36,578   INFO  cfg.MODEL.DENSE_HEAD.LOSS_CONFIG.LOSS_WEIGHTS.cls_weight: 1.0
+INFO:pcdet.utils.common_utils:cfg.MODEL.DENSE_HEAD.LOSS_CONFIG.LOSS_WEIGHTS.cls_weight: 1.0
+2023-09-07 23:39:36,578   INFO  cfg.MODEL.DENSE_HEAD.LOSS_CONFIG.LOSS_WEIGHTS.loc_weight: 2.0
+INFO:pcdet.utils.common_utils:cfg.MODEL.DENSE_HEAD.LOSS_CONFIG.LOSS_WEIGHTS.loc_weight: 2.0
+2023-09-07 23:39:36,578   INFO  cfg.MODEL.DENSE_HEAD.LOSS_CONFIG.LOSS_WEIGHTS.dir_weight: 0.2
+INFO:pcdet.utils.common_utils:cfg.MODEL.DENSE_HEAD.LOSS_CONFIG.LOSS_WEIGHTS.dir_weight: 0.2
+2023-09-07 23:39:36,578   INFO  cfg.MODEL.DENSE_HEAD.LOSS_CONFIG.LOSS_WEIGHTS.code_weights: [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0]
+INFO:pcdet.utils.common_utils:cfg.MODEL.DENSE_HEAD.LOSS_CONFIG.LOSS_WEIGHTS.code_weights: [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0]
+2023-09-07 23:39:36,578   INFO  
+cfg.MODEL.ROI_HEAD = edict()
+INFO:pcdet.utils.common_utils:
+cfg.MODEL.ROI_HEAD = edict()
+2023-09-07 23:39:36,578   INFO  cfg.MODEL.ROI_HEAD.NAME: TEDMHead
+INFO:pcdet.utils.common_utils:cfg.MODEL.ROI_HEAD.NAME: TEDMHead
+2023-09-07 23:39:36,578   INFO  cfg.MODEL.ROI_HEAD.CLASS_AGNOSTIC: True
+INFO:pcdet.utils.common_utils:cfg.MODEL.ROI_HEAD.CLASS_AGNOSTIC: True
+2023-09-07 23:39:36,578   INFO  cfg.MODEL.ROI_HEAD.SHARED_FC: [256, 256]
+INFO:pcdet.utils.common_utils:cfg.MODEL.ROI_HEAD.SHARED_FC: [256, 256]
+2023-09-07 23:39:36,578   INFO  cfg.MODEL.ROI_HEAD.CLS_FC: [256, 256]
+INFO:pcdet.utils.common_utils:cfg.MODEL.ROI_HEAD.CLS_FC: [256, 256]
+2023-09-07 23:39:36,579   INFO  cfg.MODEL.ROI_HEAD.REG_FC: [256, 256]
+INFO:pcdet.utils.common_utils:cfg.MODEL.ROI_HEAD.REG_FC: [256, 256]
+2023-09-07 23:39:36,579   INFO  cfg.MODEL.ROI_HEAD.DP_RATIO: 0.01
+INFO:pcdet.utils.common_utils:cfg.MODEL.ROI_HEAD.DP_RATIO: 0.01
+2023-09-07 23:39:36,579   INFO  
+cfg.MODEL.ROI_HEAD.PART = edict()
+INFO:pcdet.utils.common_utils:
+cfg.MODEL.ROI_HEAD.PART = edict()
+2023-09-07 23:39:36,579   INFO  cfg.MODEL.ROI_HEAD.PART.IN_CHANNEL: 256
+INFO:pcdet.utils.common_utils:cfg.MODEL.ROI_HEAD.PART.IN_CHANNEL: 256
+2023-09-07 23:39:36,579   INFO  cfg.MODEL.ROI_HEAD.PART.SIZE: 7
+INFO:pcdet.utils.common_utils:cfg.MODEL.ROI_HEAD.PART.SIZE: 7
+2023-09-07 23:39:36,579   INFO  cfg.MODEL.ROI_HEAD.PART.GRID_OFFSETS: [0.0, 40.0]
+INFO:pcdet.utils.common_utils:cfg.MODEL.ROI_HEAD.PART.GRID_OFFSETS: [0.0, 40.0]
+2023-09-07 23:39:36,579   INFO  cfg.MODEL.ROI_HEAD.PART.FEATMAP_STRIDE: 0.4
+INFO:pcdet.utils.common_utils:cfg.MODEL.ROI_HEAD.PART.FEATMAP_STRIDE: 0.4
+2023-09-07 23:39:36,579   INFO  
+cfg.MODEL.ROI_HEAD.NMS_CONFIG = edict()
+INFO:pcdet.utils.common_utils:
+cfg.MODEL.ROI_HEAD.NMS_CONFIG = edict()
+2023-09-07 23:39:36,579   INFO  
+cfg.MODEL.ROI_HEAD.NMS_CONFIG.TRAIN = edict()
+INFO:pcdet.utils.common_utils:
+cfg.MODEL.ROI_HEAD.NMS_CONFIG.TRAIN = edict()
+2023-09-07 23:39:36,579   INFO  cfg.MODEL.ROI_HEAD.NMS_CONFIG.TRAIN.NMS_TYPE: nms_gpu
+INFO:pcdet.utils.common_utils:cfg.MODEL.ROI_HEAD.NMS_CONFIG.TRAIN.NMS_TYPE: nms_gpu
+2023-09-07 23:39:36,579   INFO  cfg.MODEL.ROI_HEAD.NMS_CONFIG.TRAIN.MULTI_CLASSES_NMS: False
+INFO:pcdet.utils.common_utils:cfg.MODEL.ROI_HEAD.NMS_CONFIG.TRAIN.MULTI_CLASSES_NMS: False
+2023-09-07 23:39:36,579   INFO  cfg.MODEL.ROI_HEAD.NMS_CONFIG.TRAIN.NMS_PRE_MAXSIZE: 4000
+INFO:pcdet.utils.common_utils:cfg.MODEL.ROI_HEAD.NMS_CONFIG.TRAIN.NMS_PRE_MAXSIZE: 4000
+2023-09-07 23:39:36,579   INFO  cfg.MODEL.ROI_HEAD.NMS_CONFIG.TRAIN.NMS_POST_MAXSIZE: 512
+INFO:pcdet.utils.common_utils:cfg.MODEL.ROI_HEAD.NMS_CONFIG.TRAIN.NMS_POST_MAXSIZE: 512
+2023-09-07 23:39:36,579   INFO  cfg.MODEL.ROI_HEAD.NMS_CONFIG.TRAIN.NMS_THRESH: 0.8
+INFO:pcdet.utils.common_utils:cfg.MODEL.ROI_HEAD.NMS_CONFIG.TRAIN.NMS_THRESH: 0.8
+2023-09-07 23:39:36,580   INFO  
+cfg.MODEL.ROI_HEAD.NMS_CONFIG.TEST = edict()
+INFO:pcdet.utils.common_utils:
+cfg.MODEL.ROI_HEAD.NMS_CONFIG.TEST = edict()
+2023-09-07 23:39:36,580   INFO  cfg.MODEL.ROI_HEAD.NMS_CONFIG.TEST.NMS_TYPE: nms_gpu
+INFO:pcdet.utils.common_utils:cfg.MODEL.ROI_HEAD.NMS_CONFIG.TEST.NMS_TYPE: nms_gpu
+2023-09-07 23:39:36,580   INFO  cfg.MODEL.ROI_HEAD.NMS_CONFIG.TEST.MULTI_CLASSES_NMS: False
+INFO:pcdet.utils.common_utils:cfg.MODEL.ROI_HEAD.NMS_CONFIG.TEST.MULTI_CLASSES_NMS: False
+2023-09-07 23:39:36,580   INFO  cfg.MODEL.ROI_HEAD.NMS_CONFIG.TEST.USE_FAST_NMS: True
+INFO:pcdet.utils.common_utils:cfg.MODEL.ROI_HEAD.NMS_CONFIG.TEST.USE_FAST_NMS: True
+2023-09-07 23:39:36,580   INFO  cfg.MODEL.ROI_HEAD.NMS_CONFIG.TEST.SCORE_THRESH: 0.0
+INFO:pcdet.utils.common_utils:cfg.MODEL.ROI_HEAD.NMS_CONFIG.TEST.SCORE_THRESH: 0.0
+2023-09-07 23:39:36,580   INFO  cfg.MODEL.ROI_HEAD.NMS_CONFIG.TEST.NMS_PRE_MAXSIZE: 4000
+INFO:pcdet.utils.common_utils:cfg.MODEL.ROI_HEAD.NMS_CONFIG.TEST.NMS_PRE_MAXSIZE: 4000
+2023-09-07 23:39:36,580   INFO  cfg.MODEL.ROI_HEAD.NMS_CONFIG.TEST.NMS_POST_MAXSIZE: 50
+INFO:pcdet.utils.common_utils:cfg.MODEL.ROI_HEAD.NMS_CONFIG.TEST.NMS_POST_MAXSIZE: 50
+2023-09-07 23:39:36,580   INFO  cfg.MODEL.ROI_HEAD.NMS_CONFIG.TEST.NMS_THRESH: 0.75
+INFO:pcdet.utils.common_utils:cfg.MODEL.ROI_HEAD.NMS_CONFIG.TEST.NMS_THRESH: 0.75
+2023-09-07 23:39:36,580   INFO  
+cfg.MODEL.ROI_HEAD.ROI_GRID_POOL = edict()
+INFO:pcdet.utils.common_utils:
+cfg.MODEL.ROI_HEAD.ROI_GRID_POOL = edict()
+2023-09-07 23:39:36,580   INFO  cfg.MODEL.ROI_HEAD.ROI_GRID_POOL.FEATURES_SOURCE: ['x_conv3', 'x_conv4']
+INFO:pcdet.utils.common_utils:cfg.MODEL.ROI_HEAD.ROI_GRID_POOL.FEATURES_SOURCE: ['x_conv3', 'x_conv4']
+2023-09-07 23:39:36,580   INFO  cfg.MODEL.ROI_HEAD.ROI_GRID_POOL.PRE_MLP: True
+INFO:pcdet.utils.common_utils:cfg.MODEL.ROI_HEAD.ROI_GRID_POOL.PRE_MLP: True
+2023-09-07 23:39:36,580   INFO  cfg.MODEL.ROI_HEAD.ROI_GRID_POOL.GRID_SIZE: 6
+INFO:pcdet.utils.common_utils:cfg.MODEL.ROI_HEAD.ROI_GRID_POOL.GRID_SIZE: 6
+2023-09-07 23:39:36,580   INFO  
+cfg.MODEL.ROI_HEAD.ROI_GRID_POOL.POOL_LAYERS = edict()
+INFO:pcdet.utils.common_utils:
+cfg.MODEL.ROI_HEAD.ROI_GRID_POOL.POOL_LAYERS = edict()
+2023-09-07 23:39:36,581   INFO  
+cfg.MODEL.ROI_HEAD.ROI_GRID_POOL.POOL_LAYERS.x_conv3 = edict()
+INFO:pcdet.utils.common_utils:
+cfg.MODEL.ROI_HEAD.ROI_GRID_POOL.POOL_LAYERS.x_conv3 = edict()
+2023-09-07 23:39:36,581   INFO  cfg.MODEL.ROI_HEAD.ROI_GRID_POOL.POOL_LAYERS.x_conv3.MLPS: [[32, 32], [32, 32]]
+INFO:pcdet.utils.common_utils:cfg.MODEL.ROI_HEAD.ROI_GRID_POOL.POOL_LAYERS.x_conv3.MLPS: [[32, 32], [32, 32]]
+2023-09-07 23:39:36,581   INFO  cfg.MODEL.ROI_HEAD.ROI_GRID_POOL.POOL_LAYERS.x_conv3.QUERY_RANGES: [[2, 2, 2], [4, 4, 4]]
+INFO:pcdet.utils.common_utils:cfg.MODEL.ROI_HEAD.ROI_GRID_POOL.POOL_LAYERS.x_conv3.QUERY_RANGES: [[2, 2, 2], [4, 4, 4]]
+2023-09-07 23:39:36,581   INFO  cfg.MODEL.ROI_HEAD.ROI_GRID_POOL.POOL_LAYERS.x_conv3.POOL_RADIUS: [0.4, 0.8]
+INFO:pcdet.utils.common_utils:cfg.MODEL.ROI_HEAD.ROI_GRID_POOL.POOL_LAYERS.x_conv3.POOL_RADIUS: [0.4, 0.8]
+2023-09-07 23:39:36,581   INFO  cfg.MODEL.ROI_HEAD.ROI_GRID_POOL.POOL_LAYERS.x_conv3.NSAMPLE: [16, 16]
+INFO:pcdet.utils.common_utils:cfg.MODEL.ROI_HEAD.ROI_GRID_POOL.POOL_LAYERS.x_conv3.NSAMPLE: [16, 16]
+2023-09-07 23:39:36,581   INFO  cfg.MODEL.ROI_HEAD.ROI_GRID_POOL.POOL_LAYERS.x_conv3.POOL_METHOD: max_pool
+INFO:pcdet.utils.common_utils:cfg.MODEL.ROI_HEAD.ROI_GRID_POOL.POOL_LAYERS.x_conv3.POOL_METHOD: max_pool
+2023-09-07 23:39:36,581   INFO  
+cfg.MODEL.ROI_HEAD.ROI_GRID_POOL.POOL_LAYERS.x_conv4 = edict()
+INFO:pcdet.utils.common_utils:
+cfg.MODEL.ROI_HEAD.ROI_GRID_POOL.POOL_LAYERS.x_conv4 = edict()
+2023-09-07 23:39:36,581   INFO  cfg.MODEL.ROI_HEAD.ROI_GRID_POOL.POOL_LAYERS.x_conv4.MLPS: [[32, 32], [32, 32]]
+INFO:pcdet.utils.common_utils:cfg.MODEL.ROI_HEAD.ROI_GRID_POOL.POOL_LAYERS.x_conv4.MLPS: [[32, 32], [32, 32]]
+2023-09-07 23:39:36,581   INFO  cfg.MODEL.ROI_HEAD.ROI_GRID_POOL.POOL_LAYERS.x_conv4.QUERY_RANGES: [[2, 2, 2], [4, 4, 4]]
+INFO:pcdet.utils.common_utils:cfg.MODEL.ROI_HEAD.ROI_GRID_POOL.POOL_LAYERS.x_conv4.QUERY_RANGES: [[2, 2, 2], [4, 4, 4]]
+2023-09-07 23:39:36,581   INFO  cfg.MODEL.ROI_HEAD.ROI_GRID_POOL.POOL_LAYERS.x_conv4.POOL_RADIUS: [0.8, 1.6]
+INFO:pcdet.utils.common_utils:cfg.MODEL.ROI_HEAD.ROI_GRID_POOL.POOL_LAYERS.x_conv4.POOL_RADIUS: [0.8, 1.6]
+2023-09-07 23:39:36,581   INFO  cfg.MODEL.ROI_HEAD.ROI_GRID_POOL.POOL_LAYERS.x_conv4.NSAMPLE: [16, 16]
+INFO:pcdet.utils.common_utils:cfg.MODEL.ROI_HEAD.ROI_GRID_POOL.POOL_LAYERS.x_conv4.NSAMPLE: [16, 16]
+2023-09-07 23:39:36,581   INFO  cfg.MODEL.ROI_HEAD.ROI_GRID_POOL.POOL_LAYERS.x_conv4.POOL_METHOD: max_pool
+INFO:pcdet.utils.common_utils:cfg.MODEL.ROI_HEAD.ROI_GRID_POOL.POOL_LAYERS.x_conv4.POOL_METHOD: max_pool
+2023-09-07 23:39:36,581   INFO  
+cfg.MODEL.ROI_HEAD.ROI_GRID_POOL_MM = edict()
+INFO:pcdet.utils.common_utils:
+cfg.MODEL.ROI_HEAD.ROI_GRID_POOL_MM = edict()
+2023-09-07 23:39:36,582   INFO  cfg.MODEL.ROI_HEAD.ROI_GRID_POOL_MM.FEATURES_SOURCE: ['x_conv3', 'x_conv4']
+INFO:pcdet.utils.common_utils:cfg.MODEL.ROI_HEAD.ROI_GRID_POOL_MM.FEATURES_SOURCE: ['x_conv3', 'x_conv4']
+2023-09-07 23:39:36,582   INFO  cfg.MODEL.ROI_HEAD.ROI_GRID_POOL_MM.PRE_MLP: True
+INFO:pcdet.utils.common_utils:cfg.MODEL.ROI_HEAD.ROI_GRID_POOL_MM.PRE_MLP: True
+2023-09-07 23:39:36,582   INFO  cfg.MODEL.ROI_HEAD.ROI_GRID_POOL_MM.GRID_SIZE: 4
+INFO:pcdet.utils.common_utils:cfg.MODEL.ROI_HEAD.ROI_GRID_POOL_MM.GRID_SIZE: 4
+2023-09-07 23:39:36,582   INFO  
+cfg.MODEL.ROI_HEAD.ROI_GRID_POOL_MM.POOL_LAYERS = edict()
+INFO:pcdet.utils.common_utils:
+cfg.MODEL.ROI_HEAD.ROI_GRID_POOL_MM.POOL_LAYERS = edict()
+2023-09-07 23:39:36,582   INFO  
+cfg.MODEL.ROI_HEAD.ROI_GRID_POOL_MM.POOL_LAYERS.x_conv3 = edict()
+INFO:pcdet.utils.common_utils:
+cfg.MODEL.ROI_HEAD.ROI_GRID_POOL_MM.POOL_LAYERS.x_conv3 = edict()
+2023-09-07 23:39:36,582   INFO  cfg.MODEL.ROI_HEAD.ROI_GRID_POOL_MM.POOL_LAYERS.x_conv3.MLPS: [[32, 32], [32, 32]]
+INFO:pcdet.utils.common_utils:cfg.MODEL.ROI_HEAD.ROI_GRID_POOL_MM.POOL_LAYERS.x_conv3.MLPS: [[32, 32], [32, 32]]
+2023-09-07 23:39:36,582   INFO  cfg.MODEL.ROI_HEAD.ROI_GRID_POOL_MM.POOL_LAYERS.x_conv3.QUERY_RANGES: [[2, 2, 2], [4, 4, 4]]
+INFO:pcdet.utils.common_utils:cfg.MODEL.ROI_HEAD.ROI_GRID_POOL_MM.POOL_LAYERS.x_conv3.QUERY_RANGES: [[2, 2, 2], [4, 4, 4]]
+2023-09-07 23:39:36,582   INFO  cfg.MODEL.ROI_HEAD.ROI_GRID_POOL_MM.POOL_LAYERS.x_conv3.POOL_RADIUS: [0.4, 0.8]
+INFO:pcdet.utils.common_utils:cfg.MODEL.ROI_HEAD.ROI_GRID_POOL_MM.POOL_LAYERS.x_conv3.POOL_RADIUS: [0.4, 0.8]
+2023-09-07 23:39:36,582   INFO  cfg.MODEL.ROI_HEAD.ROI_GRID_POOL_MM.POOL_LAYERS.x_conv3.NSAMPLE: [16, 16]
+INFO:pcdet.utils.common_utils:cfg.MODEL.ROI_HEAD.ROI_GRID_POOL_MM.POOL_LAYERS.x_conv3.NSAMPLE: [16, 16]
+2023-09-07 23:39:36,582   INFO  cfg.MODEL.ROI_HEAD.ROI_GRID_POOL_MM.POOL_LAYERS.x_conv3.POOL_METHOD: max_pool
+INFO:pcdet.utils.common_utils:cfg.MODEL.ROI_HEAD.ROI_GRID_POOL_MM.POOL_LAYERS.x_conv3.POOL_METHOD: max_pool
+2023-09-07 23:39:36,582   INFO  
+cfg.MODEL.ROI_HEAD.ROI_GRID_POOL_MM.POOL_LAYERS.x_conv4 = edict()
+INFO:pcdet.utils.common_utils:
+cfg.MODEL.ROI_HEAD.ROI_GRID_POOL_MM.POOL_LAYERS.x_conv4 = edict()
+2023-09-07 23:39:36,582   INFO  cfg.MODEL.ROI_HEAD.ROI_GRID_POOL_MM.POOL_LAYERS.x_conv4.MLPS: [[32, 32], [32, 32]]
+INFO:pcdet.utils.common_utils:cfg.MODEL.ROI_HEAD.ROI_GRID_POOL_MM.POOL_LAYERS.x_conv4.MLPS: [[32, 32], [32, 32]]
+2023-09-07 23:39:36,582   INFO  cfg.MODEL.ROI_HEAD.ROI_GRID_POOL_MM.POOL_LAYERS.x_conv4.QUERY_RANGES: [[2, 2, 2], [4, 4, 4]]
+INFO:pcdet.utils.common_utils:cfg.MODEL.ROI_HEAD.ROI_GRID_POOL_MM.POOL_LAYERS.x_conv4.QUERY_RANGES: [[2, 2, 2], [4, 4, 4]]
+2023-09-07 23:39:36,583   INFO  cfg.MODEL.ROI_HEAD.ROI_GRID_POOL_MM.POOL_LAYERS.x_conv4.POOL_RADIUS: [0.8, 1.6]
+INFO:pcdet.utils.common_utils:cfg.MODEL.ROI_HEAD.ROI_GRID_POOL_MM.POOL_LAYERS.x_conv4.POOL_RADIUS: [0.8, 1.6]
+2023-09-07 23:39:36,583   INFO  cfg.MODEL.ROI_HEAD.ROI_GRID_POOL_MM.POOL_LAYERS.x_conv4.NSAMPLE: [16, 16]
+INFO:pcdet.utils.common_utils:cfg.MODEL.ROI_HEAD.ROI_GRID_POOL_MM.POOL_LAYERS.x_conv4.NSAMPLE: [16, 16]
+2023-09-07 23:39:36,583   INFO  cfg.MODEL.ROI_HEAD.ROI_GRID_POOL_MM.POOL_LAYERS.x_conv4.POOL_METHOD: max_pool
+INFO:pcdet.utils.common_utils:cfg.MODEL.ROI_HEAD.ROI_GRID_POOL_MM.POOL_LAYERS.x_conv4.POOL_METHOD: max_pool
+2023-09-07 23:39:36,583   INFO  
+cfg.MODEL.ROI_HEAD.TARGET_CONFIG = edict()
+INFO:pcdet.utils.common_utils:
+cfg.MODEL.ROI_HEAD.TARGET_CONFIG = edict()
+2023-09-07 23:39:36,583   INFO  cfg.MODEL.ROI_HEAD.TARGET_CONFIG.BOX_CODER: ResidualCoder
+INFO:pcdet.utils.common_utils:cfg.MODEL.ROI_HEAD.TARGET_CONFIG.BOX_CODER: ResidualCoder
+2023-09-07 23:39:36,583   INFO  cfg.MODEL.ROI_HEAD.TARGET_CONFIG.ROI_PER_IMAGE: 160
+INFO:pcdet.utils.common_utils:cfg.MODEL.ROI_HEAD.TARGET_CONFIG.ROI_PER_IMAGE: 160
+2023-09-07 23:39:36,583   INFO  cfg.MODEL.ROI_HEAD.TARGET_CONFIG.FG_RATIO: 0.5
+INFO:pcdet.utils.common_utils:cfg.MODEL.ROI_HEAD.TARGET_CONFIG.FG_RATIO: 0.5
+2023-09-07 23:39:36,583   INFO  cfg.MODEL.ROI_HEAD.TARGET_CONFIG.SAMPLE_ROI_BY_EACH_CLASS: True
+INFO:pcdet.utils.common_utils:cfg.MODEL.ROI_HEAD.TARGET_CONFIG.SAMPLE_ROI_BY_EACH_CLASS: True
+2023-09-07 23:39:36,583   INFO  cfg.MODEL.ROI_HEAD.TARGET_CONFIG.CLS_SCORE_TYPE: roi_iou_x
+INFO:pcdet.utils.common_utils:cfg.MODEL.ROI_HEAD.TARGET_CONFIG.CLS_SCORE_TYPE: roi_iou_x
+2023-09-07 23:39:36,583   INFO  cfg.MODEL.ROI_HEAD.TARGET_CONFIG.CLS_FG_THRESH: [0.75]
+INFO:pcdet.utils.common_utils:cfg.MODEL.ROI_HEAD.TARGET_CONFIG.CLS_FG_THRESH: [0.75]
+2023-09-07 23:39:36,583   INFO  cfg.MODEL.ROI_HEAD.TARGET_CONFIG.CLS_BG_THRESH: [0.25]
+INFO:pcdet.utils.common_utils:cfg.MODEL.ROI_HEAD.TARGET_CONFIG.CLS_BG_THRESH: [0.25]
+2023-09-07 23:39:36,583   INFO  cfg.MODEL.ROI_HEAD.TARGET_CONFIG.CLS_BG_THRESH_LO: 0.1
+INFO:pcdet.utils.common_utils:cfg.MODEL.ROI_HEAD.TARGET_CONFIG.CLS_BG_THRESH_LO: 0.1
+2023-09-07 23:39:36,583   INFO  cfg.MODEL.ROI_HEAD.TARGET_CONFIG.HARD_BG_RATIO: 0.8
+INFO:pcdet.utils.common_utils:cfg.MODEL.ROI_HEAD.TARGET_CONFIG.HARD_BG_RATIO: 0.8
+2023-09-07 23:39:36,583   INFO  cfg.MODEL.ROI_HEAD.TARGET_CONFIG.REG_FG_THRESH: [0.55]
+INFO:pcdet.utils.common_utils:cfg.MODEL.ROI_HEAD.TARGET_CONFIG.REG_FG_THRESH: [0.55]
+2023-09-07 23:39:36,584   INFO  cfg.MODEL.ROI_HEAD.TARGET_CONFIG.ENABLE_HARD_SAMPLING: True
+INFO:pcdet.utils.common_utils:cfg.MODEL.ROI_HEAD.TARGET_CONFIG.ENABLE_HARD_SAMPLING: True
+2023-09-07 23:39:36,584   INFO  cfg.MODEL.ROI_HEAD.TARGET_CONFIG.HARD_SAMPLING_THRESH: [0.5]
+INFO:pcdet.utils.common_utils:cfg.MODEL.ROI_HEAD.TARGET_CONFIG.HARD_SAMPLING_THRESH: [0.5]
+2023-09-07 23:39:36,584   INFO  cfg.MODEL.ROI_HEAD.TARGET_CONFIG.HARD_SAMPLING_RATIO: [0.5]
+INFO:pcdet.utils.common_utils:cfg.MODEL.ROI_HEAD.TARGET_CONFIG.HARD_SAMPLING_RATIO: [0.5]
+2023-09-07 23:39:36,584   INFO  
+cfg.MODEL.ROI_HEAD.LOSS_CONFIG = edict()
+INFO:pcdet.utils.common_utils:
+cfg.MODEL.ROI_HEAD.LOSS_CONFIG = edict()
+2023-09-07 23:39:36,584   INFO  cfg.MODEL.ROI_HEAD.LOSS_CONFIG.CLS_LOSS: BinaryCrossEntropy
+INFO:pcdet.utils.common_utils:cfg.MODEL.ROI_HEAD.LOSS_CONFIG.CLS_LOSS: BinaryCrossEntropy
+2023-09-07 23:39:36,584   INFO  cfg.MODEL.ROI_HEAD.LOSS_CONFIG.REG_LOSS: smooth-l1
+INFO:pcdet.utils.common_utils:cfg.MODEL.ROI_HEAD.LOSS_CONFIG.REG_LOSS: smooth-l1
+2023-09-07 23:39:36,584   INFO  cfg.MODEL.ROI_HEAD.LOSS_CONFIG.CORNER_LOSS_REGULARIZATION: True
+INFO:pcdet.utils.common_utils:cfg.MODEL.ROI_HEAD.LOSS_CONFIG.CORNER_LOSS_REGULARIZATION: True
+2023-09-07 23:39:36,584   INFO  cfg.MODEL.ROI_HEAD.LOSS_CONFIG.GRID_3D_IOU_LOSS: False
+INFO:pcdet.utils.common_utils:cfg.MODEL.ROI_HEAD.LOSS_CONFIG.GRID_3D_IOU_LOSS: False
+2023-09-07 23:39:36,584   INFO  
+cfg.MODEL.ROI_HEAD.LOSS_CONFIG.LOSS_WEIGHTS = edict()
+INFO:pcdet.utils.common_utils:
+cfg.MODEL.ROI_HEAD.LOSS_CONFIG.LOSS_WEIGHTS = edict()
+2023-09-07 23:39:36,584   INFO  cfg.MODEL.ROI_HEAD.LOSS_CONFIG.LOSS_WEIGHTS.rcnn_cls_weight: 1.0
+INFO:pcdet.utils.common_utils:cfg.MODEL.ROI_HEAD.LOSS_CONFIG.LOSS_WEIGHTS.rcnn_cls_weight: 1.0
+2023-09-07 23:39:36,584   INFO  cfg.MODEL.ROI_HEAD.LOSS_CONFIG.LOSS_WEIGHTS.rcnn_reg_weight: 1.0
+INFO:pcdet.utils.common_utils:cfg.MODEL.ROI_HEAD.LOSS_CONFIG.LOSS_WEIGHTS.rcnn_reg_weight: 1.0
+2023-09-07 23:39:36,584   INFO  cfg.MODEL.ROI_HEAD.LOSS_CONFIG.LOSS_WEIGHTS.rcnn_corner_weight: 1.0
+INFO:pcdet.utils.common_utils:cfg.MODEL.ROI_HEAD.LOSS_CONFIG.LOSS_WEIGHTS.rcnn_corner_weight: 1.0
+2023-09-07 23:39:36,584   INFO  cfg.MODEL.ROI_HEAD.LOSS_CONFIG.LOSS_WEIGHTS.rcnn_iou3d_weight: 1.0
+INFO:pcdet.utils.common_utils:cfg.MODEL.ROI_HEAD.LOSS_CONFIG.LOSS_WEIGHTS.rcnn_iou3d_weight: 1.0
+2023-09-07 23:39:36,585   INFO  cfg.MODEL.ROI_HEAD.LOSS_CONFIG.LOSS_WEIGHTS.code_weights: [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0]
+INFO:pcdet.utils.common_utils:cfg.MODEL.ROI_HEAD.LOSS_CONFIG.LOSS_WEIGHTS.code_weights: [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0]
+2023-09-07 23:39:36,585   INFO  
+cfg.MODEL.POST_PROCESSING = edict()
+INFO:pcdet.utils.common_utils:
+cfg.MODEL.POST_PROCESSING = edict()
+2023-09-07 23:39:36,585   INFO  cfg.MODEL.POST_PROCESSING.RECALL_THRESH_LIST: [0.3, 0.5, 0.7]
+INFO:pcdet.utils.common_utils:cfg.MODEL.POST_PROCESSING.RECALL_THRESH_LIST: [0.3, 0.5, 0.7]
+2023-09-07 23:39:36,585   INFO  cfg.MODEL.POST_PROCESSING.SCORE_THRESH: 0.7
+INFO:pcdet.utils.common_utils:cfg.MODEL.POST_PROCESSING.SCORE_THRESH: 0.7
+2023-09-07 23:39:36,585   INFO  cfg.MODEL.POST_PROCESSING.OUTPUT_RAW_SCORE: False
+INFO:pcdet.utils.common_utils:cfg.MODEL.POST_PROCESSING.OUTPUT_RAW_SCORE: False
+2023-09-07 23:39:36,585   INFO  cfg.MODEL.POST_PROCESSING.EVAL_METRIC: kitti
+INFO:pcdet.utils.common_utils:cfg.MODEL.POST_PROCESSING.EVAL_METRIC: kitti
+2023-09-07 23:39:36,585   INFO  
+cfg.MODEL.POST_PROCESSING.NMS_CONFIG = edict()
+INFO:pcdet.utils.common_utils:
+cfg.MODEL.POST_PROCESSING.NMS_CONFIG = edict()
+2023-09-07 23:39:36,585   INFO  cfg.MODEL.POST_PROCESSING.NMS_CONFIG.MULTI_CLASSES_NMS: False
+INFO:pcdet.utils.common_utils:cfg.MODEL.POST_PROCESSING.NMS_CONFIG.MULTI_CLASSES_NMS: False
+2023-09-07 23:39:36,585   INFO  cfg.MODEL.POST_PROCESSING.NMS_CONFIG.NMS_TYPE: nms_gpu
+INFO:pcdet.utils.common_utils:cfg.MODEL.POST_PROCESSING.NMS_CONFIG.NMS_TYPE: nms_gpu
+2023-09-07 23:39:36,585   INFO  cfg.MODEL.POST_PROCESSING.NMS_CONFIG.NMS_THRESH: 0.1
+INFO:pcdet.utils.common_utils:cfg.MODEL.POST_PROCESSING.NMS_CONFIG.NMS_THRESH: 0.1
+2023-09-07 23:39:36,585   INFO  cfg.MODEL.POST_PROCESSING.NMS_CONFIG.NMS_PRE_MAXSIZE: 4096
+INFO:pcdet.utils.common_utils:cfg.MODEL.POST_PROCESSING.NMS_CONFIG.NMS_PRE_MAXSIZE: 4096
+2023-09-07 23:39:36,585   INFO  cfg.MODEL.POST_PROCESSING.NMS_CONFIG.NMS_POST_MAXSIZE: 500
+INFO:pcdet.utils.common_utils:cfg.MODEL.POST_PROCESSING.NMS_CONFIG.NMS_POST_MAXSIZE: 500
+2023-09-07 23:39:36,585   INFO  
+cfg.OPTIMIZATION = edict()
+INFO:pcdet.utils.common_utils:
+cfg.OPTIMIZATION = edict()
+2023-09-07 23:39:36,586   INFO  cfg.OPTIMIZATION.BATCH_SIZE_PER_GPU: 2
+INFO:pcdet.utils.common_utils:cfg.OPTIMIZATION.BATCH_SIZE_PER_GPU: 2
+2023-09-07 23:39:36,586   INFO  cfg.OPTIMIZATION.NUM_EPOCHS: 30
+INFO:pcdet.utils.common_utils:cfg.OPTIMIZATION.NUM_EPOCHS: 30
+2023-09-07 23:39:36,586   INFO  cfg.OPTIMIZATION.OPTIMIZER: adam_onecycle
+INFO:pcdet.utils.common_utils:cfg.OPTIMIZATION.OPTIMIZER: adam_onecycle
+2023-09-07 23:39:36,586   INFO  cfg.OPTIMIZATION.LR: 0.01
+INFO:pcdet.utils.common_utils:cfg.OPTIMIZATION.LR: 0.01
+2023-09-07 23:39:36,586   INFO  cfg.OPTIMIZATION.WEIGHT_DECAY: 0.01
+INFO:pcdet.utils.common_utils:cfg.OPTIMIZATION.WEIGHT_DECAY: 0.01
+2023-09-07 23:39:36,586   INFO  cfg.OPTIMIZATION.MOMENTUM: 0.9
+INFO:pcdet.utils.common_utils:cfg.OPTIMIZATION.MOMENTUM: 0.9
+2023-09-07 23:39:36,586   INFO  cfg.OPTIMIZATION.MOMS: [0.95, 0.85]
+INFO:pcdet.utils.common_utils:cfg.OPTIMIZATION.MOMS: [0.95, 0.85]
+2023-09-07 23:39:36,586   INFO  cfg.OPTIMIZATION.PCT_START: 0.4
+INFO:pcdet.utils.common_utils:cfg.OPTIMIZATION.PCT_START: 0.4
+2023-09-07 23:39:36,586   INFO  cfg.OPTIMIZATION.DIV_FACTOR: 10
+INFO:pcdet.utils.common_utils:cfg.OPTIMIZATION.DIV_FACTOR: 10
+2023-09-07 23:39:36,586   INFO  cfg.OPTIMIZATION.DECAY_STEP_LIST: [35, 45]
+INFO:pcdet.utils.common_utils:cfg.OPTIMIZATION.DECAY_STEP_LIST: [35, 45]
+2023-09-07 23:39:36,586   INFO  cfg.OPTIMIZATION.LR_DECAY: 0.1
+INFO:pcdet.utils.common_utils:cfg.OPTIMIZATION.LR_DECAY: 0.1
+2023-09-07 23:39:36,586   INFO  cfg.OPTIMIZATION.LR_CLIP: 1e-07
+INFO:pcdet.utils.common_utils:cfg.OPTIMIZATION.LR_CLIP: 1e-07
+2023-09-07 23:39:36,586   INFO  cfg.OPTIMIZATION.LR_WARMUP: False
+INFO:pcdet.utils.common_utils:cfg.OPTIMIZATION.LR_WARMUP: False
+2023-09-07 23:39:36,587   INFO  cfg.OPTIMIZATION.WARMUP_EPOCH: 1
+INFO:pcdet.utils.common_utils:cfg.OPTIMIZATION.WARMUP_EPOCH: 1
+2023-09-07 23:39:36,587   INFO  cfg.OPTIMIZATION.GRAD_NORM_CLIP: 10
+INFO:pcdet.utils.common_utils:cfg.OPTIMIZATION.GRAD_NORM_CLIP: 10
+2023-09-07 23:39:36,587   INFO  cfg.TAG: TED-M
+INFO:pcdet.utils.common_utils:cfg.TAG: TED-M
+2023-09-07 23:39:36,587   INFO  cfg.EXP_GROUP_PATH: models/kitti
+INFO:pcdet.utils.common_utils:cfg.EXP_GROUP_PATH: models/kitti
+Traceback (most recent call last):
+  File "train.py", line 201, in <module>
+    main()
+  File "train.py", line 103, in main
+    train_set, train_loader, train_sampler = build_dataloader(
+  File "/mnt/HDD2/chun/TED/pcdet/datasets/__init__.py", line 52, in build_dataloader
+    dataset = __all__[dataset_cfg.DATASET](
+  File "/mnt/HDD2/chun/TED/pcdet/datasets/kitti/kitti_dataset_mm.py", line 23, in __init__
+    super().__init__(
+  File "/mnt/HDD2/chun/TED/pcdet/datasets/dataset.py", line 41, in __init__
+    self.data_augmentor = DataAugmentor(
+  File "/mnt/HDD2/chun/TED/pcdet/datasets/augmentor/data_augmentor.py", line 23, in __init__
+    cur_augmentor = getattr(self, cur_cfg.NAME)(config=cur_cfg)
+  File "/mnt/HDD2/chun/TED/pcdet/datasets/augmentor/data_augmentor.py", line 27, in gt_sampling
+    db_sampler = database_sampler.DataBaseSampler(
+  File "/mnt/HDD2/chun/TED/pcdet/datasets/augmentor/database_sampler.py", line 30, in __init__
+    with open(str(db_info_path), 'rb') as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/mnt/HDD2/chun/OpenPCDet/data/kitti/kitti_dbinfos_train_mm.pkl'
+Traceback (most recent call last):
+  File "/home/user/anaconda3/envs/ted/lib/python3.8/runpy.py", line 194, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/home/user/anaconda3/envs/ted/lib/python3.8/runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "/home/user/anaconda3/envs/ted/lib/python3.8/site-packages/torch/distributed/launch.py", line 340, in <module>
+    main()
+  File "/home/user/anaconda3/envs/ted/lib/python3.8/site-packages/torch/distributed/launch.py", line 326, in main
+    sigkill_handler(signal.SIGTERM, None)  # not coming back
+  File "/home/user/anaconda3/envs/ted/lib/python3.8/site-packages/torch/distributed/launch.py", line 301, in sigkill_handler
+    raise subprocess.CalledProcessError(returncode=last_return_code, cmd=cmd)
+subprocess.CalledProcessError: Command '['/home/user/anaconda3/envs/ted/bin/python3', '-u', 'train.py', '--local_rank=7', '--launcher', 'pytorch']' returned non-zero exit status 1.
+*****************************************
+Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+*****************************************
+Killing subprocess 296218
+Killing subprocess 296220
+Killing subprocess 296223
+Killing subprocess 296224
+Killing subprocess 296226
+Killing subprocess 296228
+Killing subprocess 296231
+Killing subprocess 296236

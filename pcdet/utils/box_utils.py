@@ -51,6 +51,35 @@ def boxes_to_corners_3d(boxes3d):
 
     return corners3d.numpy() if is_numpy else corners3d
 
+def separate_boxes_to_corner_2d_half(boxes2d):
+
+    boxes2d, is_numpy = common_utils.check_numpy_to_torch(boxes2d)
+
+    left_corners = []
+    right_corners = []
+
+
+    x_min, y_min, x_max, y_max = boxes2d[:, 0], boxes2d[:, 1], boxes2d[:, 2], boxes2d[:, 3]
+    # Calculate the center of the bounding box
+    center_x = (x_min + x_max) / 2
+
+    # Generate the corner coordinates for the left box
+    left_corner1 = torch.stack([x_min, y_min], dim=1)
+    left_corner2 = torch.stack([center_x, y_min], dim=1)
+    left_corner3 = torch.stack([center_x, y_max], dim=1)
+    left_corner4 = torch.stack([x_min, y_max], dim=1)
+    # Generate the corner coordinates for the right box
+    right_corner1 = torch.stack([center_x, y_min], dim=1)
+    right_corner2 = torch.stack([x_max, y_min], dim=1)
+    right_corner3 = torch.stack([x_max, y_max], dim=1)
+    right_corner4 = torch.stack([center_x, y_max], dim=1)
+    
+    left_corners_tensor = torch.stack([left_corner1, left_corner2, left_corner3, left_corner4], dim=1)
+    right_corners_tensor = torch.stack([right_corner1, right_corner2, right_corner3, right_corner4], dim=1)
+    # print(left_corners_tensor.shape)
+    # print(right_corners_tensor.shape)
+    # Return the corner coordinates for the left and right boxes as tensors
+    return left_corners_tensor.numpy(), right_corners_tensor.numpy()
 
 def mask_boxes_outside_range_numpy(boxes, limit_range, min_num_corners=1):
     """

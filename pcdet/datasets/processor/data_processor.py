@@ -77,7 +77,6 @@ class DataProcessor(object):
     def mask_points_and_boxes_outside_range(self, data_dict=None, config=None):
         if data_dict is None:
             return partial(self.mask_points_and_boxes_outside_range, config=config)
-
         for rot_num_id in range(self.rot_num):
             if rot_num_id == 0:
                 rot_num_id_str = ''
@@ -85,7 +84,7 @@ class DataProcessor(object):
                 rot_num_id_str = str(rot_num_id)
             mask = common_utils.mask_points_by_range(data_dict['points'+rot_num_id_str], self.point_cloud_range)
             data_dict['points'+rot_num_id_str] = data_dict['points'+rot_num_id_str][mask]
-
+            
             if 'mm' in data_dict:
                 mask = common_utils.mask_points_by_range(data_dict['points_mm'+rot_num_id_str], self.point_cloud_range)
                 data_dict['points_mm'+rot_num_id_str] = data_dict['points_mm'+rot_num_id_str][mask]
@@ -95,7 +94,8 @@ class DataProcessor(object):
                     data_dict['gt_boxes'+rot_num_id_str], self.point_cloud_range, min_num_corners=config.get('min_num_corners', 1)
                 )
                 data_dict['gt_boxes'+rot_num_id_str] = data_dict['gt_boxes'+rot_num_id_str][mask]
-
+                # if data_dict.get('pts_ratio', None) is not None:
+                #     data_dict['pts_ratio'] = data_dict['pts_ratio'][mask]
                 if rot_num_id==0 and 'gt_tracklets'+rot_num_id_str in data_dict:
                     data_dict['gt_tracklets'] = data_dict['gt_tracklets'][mask]
                     data_dict['num_bbs_in_tracklets'] = data_dict['num_bbs_in_tracklets'][mask]
@@ -225,7 +225,6 @@ class DataProcessor(object):
 
         Returns:
         """
-
         for cur_processor in self.data_processor_queue:
             data_dict = cur_processor(data_dict=data_dict)
 

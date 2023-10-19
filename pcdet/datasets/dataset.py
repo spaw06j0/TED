@@ -138,7 +138,6 @@ class DatasetTemplate(torch_data.Dataset):
         """
         if self.training:
             assert 'gt_boxes' in data_dict, 'gt_boxes should be provided for training'
-
             data_dict = self.data_augmentor.forward(
                 data_dict={
                     **data_dict,
@@ -245,6 +244,12 @@ class DatasetTemplate(torch_data.Dataset):
                     for k in range(batch_size):
                         batch_gt_boxes3d[k, :val[k].__len__(), :] = val[k]
                     ret[key] = batch_gt_boxes3d
+                elif key in ['pts_ratio']:
+                    max_pts_ratio = max([len(x) for x in val])
+                    batch_pts_ratio = np.zeros((batch_size, max_pts_ratio), dtype=np.float32)
+                    for k in range(batch_size):
+                        batch_pts_ratio[k, :val[k].__len__()] = val[k]
+                    ret[key] = batch_pts_ratio
                 else:
                     ret[key] = np.stack(val, axis=0)
             except:
